@@ -1,0 +1,41 @@
+Package: FSSgam
+Title: Full Subsets Multiple Regression Using GAMs
+Version: 1.2.0
+Authors@R: c(
+    person("Rebecca", "Fisher",
+           email = "r.fisher@aims.gov.au",
+           role = c("aut", "cre")),
+    person("Australian Institute of Marine Science",
+           role = "cph")
+    )
+Description: 
+    Full-subsets information-theoretic approaches are increasingly used to explore
+    predictive power and variable importance when a wide range of candidate predictors
+    are being considered. This package provides functions that can be used to construct,
+    fit, and compare a complete model set of possible ecological or environmental
+    predictors for a given response variable of interest. Models are based on
+    Generalized Additive Models (GAMs) and build on the 'MuMIn' package. Advantages include
+    the capacity to fit more predictors than there are replicates, automatic removal of
+    models with correlated predictors, and support for model sets that include
+    interactions between factors and smooth predictors, as well as smooth-by-smooth
+    interactions via te(). Methods are described in
+    Fisher et al. (2018) <doi:10.1002/ece3.4134>.
+Depends: R (>= 4.4.0)
+License: Apache License (== 2.0)
+Encoding: UTF-8
+LazyData: true
+Imports: doSNOW, foreach, mgcv, MuMIn, nnet, parallel, stats, utils
+URL: https://github.com/beckyfisher/FSSgam_package,
+        https://beckyfisher.github.io/FSSgam_package/,
+        https://beckyfisher.github.io/FSSgam/
+BugReports: https://github.com/beckyfisher/FSSgam_package/issues
+Suggests: covr, gamm4, Matrix, testthat (>= 3.2.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-09-17 00:54:17 UTC; rfisher
+Author: Rebecca Fisher [aut, cre],
+  Australian Institute of Marine Science [cph]
+Maintainer: Rebecca Fisher <r.fisher@aims.gov.au>
+Repository: CRAN
+Date/Publication: 2026-09-28 07:30:08 UTC
